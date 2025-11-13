@@ -18,7 +18,7 @@
     "fetch-resources": "bash scripts/fetch-resources.sh",
     "build": "npm run fetch-resources && tsc",
     "build:quick": "tsc",
-    "postinstall": "npm run build:quick",
+    "postinstall": "npm run build",
     "watch": "tsc --watch",
     "start": "node dist/index.js",
     "dev": "npm run build:quick && node dist/index.js",

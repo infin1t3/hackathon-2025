@@ -21,7 +21,9 @@
     "postinstall": "npm run build",
     "watch": "tsc --watch",
     "start": "node dist/index.js",
+    "start:http": "node dist/server-http.js",
     "dev": "npm run build:quick && node dist/index.js",
+    "dev:http": "npm run build:quick && node dist/server-http.js",
     "prepublishOnly": "npm run build",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
@@ -61,9 +63,13 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
+    "cors": "^2.8.5",
+    "express": "^5.0.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
     "@types/node": "^22.10.2",
     "oxlint": "^1.23.0",
     "prettier": "^3.6.2",

@@ -20,9 +20,7 @@
     "build:quick": "tsc",
     "watch": "tsc --watch",
     "start": "node dist/index.js",
-    "start:http": "node dist/server.js",
     "dev": "npm run build:quick && node dist/index.js",
-    "dev:http": "npm run build:quick && node dist/server.js",
     "prepublishOnly": "npm run build",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
@@ -62,14 +60,10 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
-    "zod": "^3.23.8",
-    "express": "^4.18.2",
-    "cors": "^2.8.5"
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
-    "@types/express": "^4.17.21",
-    "@types/cors": "^2.8.17",
     "oxlint": "^1.23.0",
     "prettier": "^3.6.2",
     "typescript": "^5.7.2"
